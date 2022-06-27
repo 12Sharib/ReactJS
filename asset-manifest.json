@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/12Sharib/TextCorrector-ReactJs/static/css/main.e6c13ad2.css",
-    "main.js": "/12Sharib/TextCorrector-ReactJs/static/js/main.7c3471ad.js",
-    "static/js/787.84776525.chunk.js": "/12Sharib/TextCorrector-ReactJs/static/js/787.84776525.chunk.js",
-    "index.html": "/12Sharib/TextCorrector-ReactJs/index.html",
-    "main.e6c13ad2.css.map": "/12Sharib/TextCorrector-ReactJs/static/css/main.e6c13ad2.css.map",
-    "main.7c3471ad.js.map": "/12Sharib/TextCorrector-ReactJs/static/js/main.7c3471ad.js.map",
-    "787.84776525.chunk.js.map": "/12Sharib/TextCorrector-ReactJs/static/js/787.84776525.chunk.js.map"
+    "main.css": "/TextCorrector-ReactJs/static/css/main.e6c13ad2.css",
+    "main.js": "/TextCorrector-ReactJs/static/js/main.0472168f.js",
+    "static/js/787.84776525.chunk.js": "/TextCorrector-ReactJs/static/js/787.84776525.chunk.js",
+    "index.html": "/TextCorrector-ReactJs/index.html",
+    "main.e6c13ad2.css.map": "/TextCorrector-ReactJs/static/css/main.e6c13ad2.css.map",
+    "main.0472168f.js.map": "/TextCorrector-ReactJs/static/js/main.0472168f.js.map",
+    "787.84776525.chunk.js.map": "/TextCorrector-ReactJs/static/js/787.84776525.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.7c3471ad.js"
+    "static/js/main.0472168f.js"
   ]
 }
