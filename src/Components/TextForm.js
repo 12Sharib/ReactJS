@@ -22,6 +22,7 @@ export default function TextForm(props) {
     text.select();
     //Copying the text to clipboard
     navigator.clipboard.writeText(text.value);
+    document.getSelection().removeAllRanges();
     props.showAlert("Copied to Clipboard","success");
 
   }
@@ -47,24 +48,24 @@ export default function TextForm(props) {
             placeholder="Enter" 
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-2" onClick={handleUpClick}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={handleUpClick}>
           Convert To UpperCase
         </button>
-        <button className="btn btn-primary mx-2" onClick={LowerCase}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={LowerCase}>
           Convert To LowerCase
         </button>
-        <button className="btn btn-primary mx-2" onClick={Clear}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={Clear}>
           Clear TextArea
         </button>
-        <button className="btn btn-primary mx-2" onClick={Copy}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={Copy}>
           CopyText
         </button>
       </div>
       <div className="Container my-3">
         <h2>Your Text Summary</h2>
-        <p>Your Para has {text.split(" ").length} Words and {text.length} Characters</p>
-        <p>Spaces : {text.split(" ").length}</p>
-        <p>{0.008 * text.split(" ").length} Minutes Read</p>
+        <p>Your Para has {text.split(" ").filter((element)=>{return element.length!==0}).length} Words and {text.length} Characters</p>
+        <p>Spaces : {text.split(" ").filter((element)=>{return element.length!==0}).length}</p>
+        <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes Read</p>
         <h2>Preview</h2>
         <p>{text.length >0?text:"Enter Something"}</p>
       </div>

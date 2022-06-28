@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 export default function About() {
-    const [myStyle, setMyStyle] = useState ({
-        color:'white',
-        backgroundColor:'black'
-    })
+    // const [myStyle, setMyStyle] = useState ({
+    //     color:'white',
+    //     backgroundColor:'black'
+    // })
   return (
     <div className="container" style={myStyle}>
         <h1 className="my-2">About Us</h1>

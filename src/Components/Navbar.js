@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
+
 export default function Navbar(props) {
   return (
     <nav
@@ -30,9 +31,7 @@ export default function Navbar(props) {
                 </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">
-                {props.about}
-              </a>
+              <a className="nav-link" href="home">{props.about}</a>
             </li>
           </ul>
 
