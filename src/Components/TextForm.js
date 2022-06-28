@@ -18,11 +18,15 @@ export default function TextForm(props) {
     props.showAlert("Cleared","success");
   }
   const Copy = () => {
-    let text = document.getElementById("myBox");
-    text.select();
-    //Copying the text to clipboard
-    navigator.clipboard.writeText(text.value);
-    document.getSelection().removeAllRanges();
+    // let text = document.getElementById("myBox");
+    // text.select();
+    // //Copying the text to clipboard
+    // navigator.clipboard.writeText(text.value);
+    // document.getSelection().removeAllRanges();
+    // props.showAlert("Copied to Clipboard","success");
+
+    //using these two line we can also copy texts;
+    navigator.clipboard.writeText(text);
     props.showAlert("Copied to Clipboard","success");
 
   }
@@ -63,7 +67,7 @@ export default function TextForm(props) {
       </div>
       <div className="Container my-3">
         <h2>Your Text Summary</h2>
-        <p>Your Para has {text.split(" ").filter((element)=>{return element.length!==0}).length} Words and {text.length} Characters</p>
+        <p>Your Para has {text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words and {text.length} Characters</p>
         <p>Spaces : {text.split(" ").filter((element)=>{return element.length!==0}).length}</p>
         <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes Read</p>
         <h2>Preview</h2>
